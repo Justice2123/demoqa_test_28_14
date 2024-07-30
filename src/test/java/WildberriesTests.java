@@ -3,12 +3,12 @@ import org.junit.jupiter.api.Test;
 
 import pages.WildberriesPage;
 
-@Tag("regression")
 public class WildberriesTests extends TestBase {
 
     WildberriesPage wildberriesPage = new WildberriesPage();
 
     @Test
+    @Tag("regression")
     void checkModalWindowWithSizesIfNoGoodsTest() {
         wildberriesPage.openPage();
         wildberriesPage.inputItem();
@@ -53,6 +53,7 @@ public class WildberriesTests extends TestBase {
     }
 
     @Test
+    @Tag("regression")
     void checkSearchingResultsTitleTest() {
         wildberriesPage.openPage();
         wildberriesPage.inputItem();

@@ -37,7 +37,7 @@ public class WildberriesPage {
         return this;
     }
 
-    @Step("вводим артикул {value}")
+    @Step("вводим значение в поисковое поле {value}")
     public WildberriesPage enteringItem(String value) {
         searchInput.setValue(value).pressEnter();
         return this;

@@ -16,7 +16,6 @@ public class TestBase {
     static void setUpBefore() {
 
         Configuration.baseUrl = "https://www.wildberries.ru/";
-        ;
         Configuration.browserSize = System.getProperty("windowSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "100");
@@ -34,6 +33,7 @@ public class TestBase {
 
     @BeforeEach
     void setUpBeforeEach() {
+
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
