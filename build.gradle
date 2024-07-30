@@ -35,6 +35,13 @@ dependencies {
     )
 }
 
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 
 tasks.withType(Test) {
     systemProperties(System.getProperties())
@@ -48,34 +55,19 @@ tasks.withType(Test) {
     }
 }
 
-//1 вариант в дженкенсе передаем имена тэгов test -Dtype=${TESTS}
-tasks.withType(Test) {
+
+
+
+task smokeTest(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        if (System.getProperty("type") != null && !System.getProperty("type").isEmpty()) {
-            includeTags System.getProperty("type")
-        }
+        includeTags("smoke")
     }
 }
 
-// 2вариант на каждый тэг делаем таску ${TESTS}
-//task smokeTest(type: Test) {
-//    systemProperties(System.getProperties())
-//    useJUnitPlatform {
-//        includeTags("smoke")
-//    }
-//}
-//
-//task regressionTest(type: Test) {
-//    systemProperties(System.getProperties())
-//    useJUnitPlatform {
-//        includeTags("regression")
-//    }
-//}
-//
-//task negativeTest(type: Test) {
-//    systemProperties(System.getProperties())
-//    useJUnitPlatform {
-//        includeTags("negative")
-//    }
-//}
+task regressionTest(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("regression")
+    }
+}

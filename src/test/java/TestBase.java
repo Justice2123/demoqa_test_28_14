@@ -14,7 +14,9 @@ public class TestBase {
 
     @BeforeAll
     static void setUpBefore() {
-        Configuration.baseUrl = "https://travel.yandex.ru/";
+
+        Configuration.baseUrl = "https://www.wildberries.ru/";
+        ;
         Configuration.browserSize = System.getProperty("windowSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "100");

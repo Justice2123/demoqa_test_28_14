@@ -6,21 +6,24 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Selenide.executeJavaScript;
+
 
 public class WildberriesPage {
 
     private final SelenideElement
             searchInput = $("#searchInput"),
             productParamsTable = $(".product-params__table"),
-            addItemToFavorites = $(".order__for-fixed",1),
+            addItem = $(".order__for-fixed", 1),
             headerModalWindowSize = $(".popup__header"),
             basket = $(".j-item-basket"),
             basketTitle = $(".basket-empty__title"),
             loginPage = $(".j-main-login"),
             formMobileCodes = $(".form-block__dropdown"),
-            menuMobileCode = $(".drop-select",4),
+            menuMobileCode = $(".drop-select", 4),
             mobileCode = $(".form-block__mask"),
+            cardItem = $(".j-card-item", 0),
+            basketButtonDel = $(".j-basket-item-del"),
+            resultsTitle = $(".searching-results__title");
 
 
     @Step("open page")
@@ -48,7 +51,7 @@ public class WildberriesPage {
 
     @Step("добавляем товар в избранное")
     public WildberriesPage addItemFavorite(String value) {
-        addItemToFavorites.shouldHave(text(value)).click();
+        addItem.shouldHave(text(value)).click();
         return this;
     }
 
@@ -94,7 +97,22 @@ public class WildberriesPage {
         return this;
     }
 
+    @Step("выбираем первый товар из списка")
+    public WildberriesPage firstCardItem() {
+        cardItem.click();
+        return this;
+    }
 
+    @Step("удаляем товар в корзине")
+    public WildberriesPage deleteItemInBasket() {
+        basketButtonDel.click();
+        return this;
+    }
 
+    @Step("сверяем заголовок с набранным текстом в поисовом окне")
+    public WildberriesPage checkResultsTitle(String value) {
+        resultsTitle.shouldHave(text(value));
+        return this;
+    }
 
 }
