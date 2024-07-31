@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -23,13 +24,14 @@ public class WildberriesPage {
             mobileCode = $(".form-block__mask"),
             cardItem = $(".j-card-item", 0),
             basketButtonDel = $(".j-basket-item-del"),
-            resultsTitle = $(".searching-results__title");
-
+            resultsTitle = $(".searching-results__title"),
+            jobButton =  $(".simple-menu__link--employment");
 
     @Step("open page")
     public void openPage() {
         open("");
     }
+
 
     @Step("ставим курсор на поисковое поле")
     public WildberriesPage inputItem() {
@@ -112,6 +114,12 @@ public class WildberriesPage {
     @Step("сверяем заголовок с набранным текстом в поисовом окне")
     public WildberriesPage checkResultsTitle(String value) {
         resultsTitle.shouldHave(text(value));
+        return this;
+    }
+
+    @Step("проверяем кнопку Работа в Wildberries")
+    public WildberriesPage checkEmploymentButton() {
+        jobButton.shouldBe(visible).click();
         return this;
     }
 

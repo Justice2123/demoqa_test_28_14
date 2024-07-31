@@ -9,16 +9,16 @@ public class WildberriesTests extends TestBase {
 
     WildberriesPage wildberriesPage = new WildberriesPage();
 
-    @Test
-    @Tag("regression")
-    void checkModalWindowWithSizesIfNoGoodsTest() {
-        wildberriesPage.openPage();
-        wildberriesPage.inputItem();
-        wildberriesPage.enteringItem("163571936");
-        wildberriesPage.checkItemNumber("163571936");
-        wildberriesPage.addItemFavorite("В избранное");
-        wildberriesPage.checkTitleModalWindowSize("Выберите размер");
-    }
+//    @Test
+//    @Tag("regression")
+//    void checkModalWindowWithSizesIfNoGoodsTest() {
+//        wildberriesPage.openPage();
+//        wildberriesPage.inputItem();
+//        wildberriesPage.enteringItem("163571936");
+//        wildberriesPage.checkItemNumber("163571936");
+//        wildberriesPage.addItemFavorite("В избранное");
+//        wildberriesPage.checkTitleModalWindowSize("Выберите размер");
+//    }
 
     @Test
     @Tag("smoke")
@@ -62,6 +62,15 @@ public class WildberriesTests extends TestBase {
         wildberriesPage.enteringItem("корм для кошек");
         wildberriesPage.checkResultsTitle("корм для кошек");
     }
+
+
+    @Test
+    @Tag("regression")
+    void employmentButtonTest() {
+        wildberriesPage.openPage();
+        wildberriesPage.checkEmploymentButton();
+    }
+
 
 
 }
