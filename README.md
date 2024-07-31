@@ -6,7 +6,7 @@ ___
 - [Использованный стек](#computer-использованный-стек)
 - [Запуск тестов из терминала](#arrow_forward-запуск-тестов-из-терминала)
 - [Сборка в Jenkins](#-Сборка-в-Jenkins)
-- [Пример Allure-отчета]()
+- [Пример Allure-отчета](#-Пример-Allure-отчета)
 - [Уведомления в Telegram с использованием бота]()  
 - [Видео примера запуска тестов в Selenoid]()
 
@@ -59,3 +59,23 @@ gradle clean test -Denv=wildberriesTest
 ```
 
 ### <img src="media/logo/Jenkins.svg" width="30" height="30" title="Jenkins"> Сборка в Jenkins
+
+<p align="center">
+<img title="Jenkins Build" src="media/scr/Jenkins.png">
+</p>
+
+### <img src="media/logo/Allure_Report.svg" title="Allure Report" width="30" heigth="30"/> Пример Allure-отчета
+___
+#### Overview
+
+<p align="center">
+<img title="Allure Overview" src="media/scr/allure_report.png">
+</p>
+
+#### Результат выполнения теста
+
+<p align="center">
+<img title="Test Results in Alure" src="media/scr/test_results.png">
+</p>
+
+### <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="30"/> Интеграция с Allure TestOps

@@ -40,7 +40,7 @@ public class WildberriesTests extends TestBase {
 
     @Test
     @Tag("smoke")
-    void checkUrlWorkPage() {
+    void checkUrlWorkPageTest() {
         wildberriesPage.openPage();
         wildberriesPage.jobPage();
         wildberriesPage.checkUrl("https://www.wildberries.ru/services/trudoustroystvo");
