@@ -5,7 +5,7 @@ ___
 ___
 - [Использованный стек](#computer-использованный-стек)
 - [Запуск тестов из терминала](#arrow_forward-запуск-тестов-из-терминала)
-- [Сборка в Jenkins](#Сборка-в-Jenkins)
+- [Сборка в Jenkins](#-Сборка-в-Jenkins)
 - [Пример Allure-отчета]()
 - [Уведомления в Telegram с использованием бота]()  
 - [Видео примера запуска тестов в Selenoid]()
@@ -24,7 +24,7 @@ ___
 <img src="media/logo/JUnit5.svg" width="30" height="30" title="JUnit5">
 <img src="media/logo/Selenide.svg" width="30" height="30" title="Selenide">
 <img src="media/logo/Selenoid.svg" width="30" height="30" title="Selenoid">
-<img src="media/logo/telegram.svg" width="30" height="30" title="telegram">
+<img src="media/logo/Telegram.svg" width="30" height="30" title="telegram">
 </p>
 
 - В проекте написаны автотесты  на языке Java с использованием фреймворка для тестирования Selenide.

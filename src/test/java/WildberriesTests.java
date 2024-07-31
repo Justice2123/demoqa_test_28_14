@@ -9,16 +9,6 @@ public class WildberriesTests extends TestBase {
 
     WildberriesPage wildberriesPage = new WildberriesPage();
 
-//    @Test
-//    @Tag("regression")
-//    void checkModalWindowWithSizesIfNoGoodsTest() {
-//        wildberriesPage.openPage();
-//        wildberriesPage.inputItem();
-//        wildberriesPage.enteringItem("163571936");
-//        wildberriesPage.checkItemNumber("163571936");
-//        wildberriesPage.addItemFavorite("В избранное");
-//        wildberriesPage.checkTitleModalWindowSize("Выберите размер");
-//    }
 
     @Test
     @Tag("smoke")
@@ -42,35 +32,27 @@ public class WildberriesTests extends TestBase {
 
 
     @Test
-    @Tag("smoke")
-    void checkButtonDeleteInBasketTest() {
-        wildberriesPage.openPage();
-        wildberriesPage.inputItem();
-        wildberriesPage.enteringItem("тушь для ресниц");
-        wildberriesPage.firstCardItem();
-        wildberriesPage.addItemFavorite("Добавить в корзину");
-        wildberriesPage.enterBasket();
-        wildberriesPage.deleteItemInBasket();
-        wildberriesPage.checkBasketTitle("В корзине пока пусто");
-    }
-
-    @Test
-    @Tag("regression")
-    void checkSearchingResultsTitleTest() {
-        wildberriesPage.openPage();
-        wildberriesPage.inputItem();
-        wildberriesPage.enteringItem("кухня");
-        wildberriesPage.checkResultsTitle("кухня");
-    }
-
-
-    @Test
     @Tag("regression")
     void employmentButtonTest() {
         wildberriesPage.openPage();
         wildberriesPage.checkEmploymentButton();
     }
 
+    @Test
+    @Tag("smoke")
+    void checkUrlWorkPage() {
+        wildberriesPage.openPage();
+        wildberriesPage.jobPage();
+        wildberriesPage.checkUrl("https://www.wildberries.ru/services/trudoustroystvo");
+    }
+
+    @Test
+    @Tag("smoke")
+    void loginPageTest() {
+        wildberriesPage.openPage();
+        wildberriesPage.loginButton();
+        wildberriesPage.checkLoginTitle("Войти или создать профиль");
+    }
 
 
 }
