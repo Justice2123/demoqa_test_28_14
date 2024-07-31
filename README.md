@@ -61,7 +61,7 @@ gradle clean test -Denv=wildberriesTest
 ### <img src="media/logo/Jenkins.svg" width="30" height="30" title="Jenkins"> Сборка в Jenkins
 
 <p align="center">
-<img title="Jenkins Build" src="media/scr/Jenkins.png">
+<img title="Jenkins Build" src="media/scr/jenkins.png">
 </p>
 
 ### <img src="media/logo/Allure_Report.svg" title="Allure Report" width="30" heigth="30"/> Пример Allure-отчета
