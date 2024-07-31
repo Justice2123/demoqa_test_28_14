@@ -59,8 +59,8 @@ public class WildberriesTests extends TestBase {
     void checkSearchingResultsTitleTest() {
         wildberriesPage.openPage();
         wildberriesPage.inputItem();
-        wildberriesPage.enteringItem("корм для кошек");
-        wildberriesPage.checkResultsTitle("корм для кошек");
+        wildberriesPage.enteringItem("кухня");
+        wildberriesPage.checkResultsTitle("кухня");
     }
 
 
