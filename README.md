@@ -1,4 +1,4 @@
-# Проект по автоматизации тестовых сценариев для компании <font color="purpule">__Wildberries__</font>
+# Проект по автоматизации тестовых сценариев для компании <a href="https://www.wildberries.ru/" style="color:purple">Wildberries</a>
 ___
 ## :notebook: Содержание:
 
@@ -7,8 +7,8 @@ ___
 - [Запуск тестов из терминала](#arrow_forward-запуск-тестов-из-терминала)
 - [Сборка в Jenkins](#-Сборка-в-Jenkins)
 - [Пример Allure-отчета](#-Пример-Allure-отчета)
-- [Уведомления в Telegram с использованием бота]()  
-- [Видео примера запуска тестов в Selenoid]()
+- [Уведомления в Telegram с использованием бота](#-Уведомления-в-Telegram-с-использованием-бота)  
+- [Видео примера запуска тестов в Selenoid](#movie_camera-Видео-примера-запуска-тестов-в-Selenoid)
 
 ### :computer: Использованный стек
 ___
@@ -78,4 +78,23 @@ ___
 <img title="Test Results in Alure" src="media/scr/test_results.png">
 </p>
 
+### <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="30"/> Интеграция с Allure TestOps
+___
+#### <img src="media/logo/jira.svg" title="Jira" width="4%"/> Интеграция с Jira
+___
+
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+___
+После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
+
+<p align="center">
+<img width="75%" title="Telegram Notifications" src="media/scr/notification.png">
+</p>
+
+### :movie_camera: Видео примера запуска тестов в Selenoid
+
+К каждому тесту в отчете прилагается видео прогона.
+<p align="center">
+  <img title="Selenoid Video" src="media/scr/video.gif">
+</p>
 ### <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="30"/> Интеграция с Allure TestOps
