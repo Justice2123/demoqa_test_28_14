@@ -56,8 +56,6 @@ tasks.withType(Test) {
 }
 
 
-
-
 task smokeTest(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
@@ -69,5 +67,12 @@ task regressionTest(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("regression")
+    }
+}
+
+task wildberriesTests(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("wildberriesTest")
     }
 }

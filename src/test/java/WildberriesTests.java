@@ -3,6 +3,8 @@ import org.junit.jupiter.api.Test;
 
 import pages.WildberriesPage;
 
+@Tag("wildberriesTest")
+
 public class WildberriesTests extends TestBase {
 
     WildberriesPage wildberriesPage = new WildberriesPage();
