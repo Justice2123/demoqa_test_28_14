@@ -97,3 +97,4 @@ ___
 <p align="center">
   <img title="Selenoid Video" src="media/scr/video.gif">
 </p>
+### <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="30"/> Интеграция с Allure TestOps
