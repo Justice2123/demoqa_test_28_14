@@ -1,4 +1,4 @@
-# Проект по автоматизации тестовых сценариев для компании <a href="https://www.wildberries.ru/" style="color:purple">Wildberries</a>
+# Проект по автоматизации тестовых сценариев для компании <a href="https://www.wildberries.ru/" style="color: purple;">Wildberries</a>
 ___
 ## :notebook: Содержание:
 
@@ -13,18 +13,18 @@ ___
 ### :computer: Использованный стек
 ___
 <p align="center">
-<img src="media/logo/Allure_Report.svg" width="30" height="30" title="Allure_Report">
-<img src="media/logo/AllureTestOps.svg" width="30" height="30" title="AllureTestOps">
-<img src="media/logo/GitHub.svg" width="30" height="30" title="GitHub">
-<img src="media/logo/Gradle.svg" width="30" height="30" title="Gradle">
-<img src="media/logo/Intelij_IDEA.svg" width="30" height="30" title="Intelij_IDEA">
-<img src="media/logo/Java.svg" width="30" height="30" title="Java">
-<img src="media/logo/Jenkins.svg" width="30" height="30" title="Jenkins">
-<img src="media/logo/jira.svg" width="30" height="30" title="jira">
-<img src="media/logo/JUnit5.svg" width="30" height="30" title="JUnit5">
-<img src="media/logo/Selenide.svg" width="30" height="30" title="Selenide">
-<img src="media/logo/Selenoid.svg" width="30" height="30" title="Selenoid">
-<img src="media/logo/Telegram.svg" width="30" height="30" title="telegram">
+<a href = "https://allurereport.org/"><img src="media/logo/Allure_Report.svg" width="30" height="30" title="Allure_Report"></a>
+<a><img src="media/logo/AllureTestOps.svg" width="30" height="30" title="AllureTestOps"></a>
+<a href = "https://github.com/"><img src="media/logo/GitHub.svg" width="30" height="30" title="GitHub"></a>
+<a href = "https://gradle.com/"><img src="media/logo/Gradle.svg" width="30" height="30" title="Gradle"></a>
+<a href = "https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="30" height="30" title="Intelij_IDEA"></a>
+<a href = "https://www.java.com/ru/"><img src="media/logo/Java.svg" width="30" height="30" title="Java"></a>
+<a href = "https://www.jenkins.io/"><img src="media/logo/Jenkins.svg" width="30" height="30" title="Jenkins"></a>
+<a href = "https://www.atlassian.com/ru/software/jira"><img src="media/logo/jira.svg" width="30" height="30" title="jira"></a>
+<a href = "https://junit.org/junit5/"><img src="media/logo/JUnit5.svg" width="30" height="30" title="JUnit5"></a>
+<a href = "https://ru.selenide.org/"><img src="media/logo/Selenide.svg" width="30" height="30" title="Selenide"></a>
+<a href = "https://aerokube.com/selenoid/"><img src="media/logo/Selenoid.svg" width="30" height="30" title="Selenoid"></a>
+<a href = "https://telegram.org/"><img src="media/logo/Telegram.svg" width="30" height="30" title="telegram"></a>
 </p>
 
 - В проекте написаны автотесты  на языке Java с использованием фреймворка для тестирования Selenide.
@@ -80,8 +80,17 @@ ___
 
 #### <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="30"/> Интеграция с Allure TestOps
 ___
+
+<p align="center">
+<img title="Allure Overview" src="media/scr/allureAutoTests.png">
+</p>
+
 #### <img src="media/logo/jira.svg" title="Jira" width="4%"/> Интеграция с Jira
 ___
+
+<p align="center">
+<img title="Allure Overview" src="media/scr/jira.png">
+</p>
 
 ### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 ___
@@ -97,4 +106,3 @@ ___
 <p align="center">
   <img title="Selenoid Video" src="media/scr/video.gif">
 </p>
-### <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="30"/> Интеграция с Allure TestOps
