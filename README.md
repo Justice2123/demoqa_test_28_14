@@ -1,4 +1,4 @@
-# Проект по автоматизации тестовых сценариев для компании <font color="purpule">__Wildberries__</font>
+# Проект по автоматизации тестовых сценариев для компании <a href = "https://www.wildberries.ru/ style="color:purple>Wildberries</a>
 ___
 ## :notebook: Содержание:
 
@@ -14,7 +14,7 @@ ___
 ___
 <p align="center">
 <a href = "https://allurereport.org/"><img src="media/logo/Allure_Report.svg" width="30" height="30" title="Allure_Report"></a>
-<a><img src="media/logo/AllureTestOps.svg" width="30" height="30" title="AllureTestOps"></a>
+<a href = "https://qameta.io/"><img src="media/logo/AllureTestOps.svg" width="30" height="30" title="AllureTestOps"></a>
 <a href = "https://github.com/"><img src="media/logo/GitHub.svg" width="30" height="30" title="GitHub"></a>
 <a href = "https://gradle.com/"><img src="media/logo/Gradle.svg" width="30" height="30" title="Gradle"></a>
 <a href = "https://www.jetbrains.com/idea/"><img src="media/logo/Intelij_IDEA.svg" width="30" height="30" title="Intelij_IDEA"></a>
