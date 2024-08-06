@@ -1,4 +1,5 @@
-# Проект по автоматизации тестовых сценариев для компании <a href="https://www.wildberries.ru/" style="color:purple">Wildberries</a>
+# Проект по автоматизации тестовых сценариев для компании <p align="center"><a href = "https://www.wildberries.ru"><img src="media/logo/Wildberries_Logo.png" width="300" title="Wildberries"></a></p>
+
 ___
 ## :notebook: Содержание:
 
