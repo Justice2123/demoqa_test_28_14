@@ -30,7 +30,7 @@ public class WildberriesPage {
         open("");
     }
 
-    @Step("переходим в Корзину")
+    @Step("перейти в Корзину")
     public WildberriesPage enterBasket() {
         basket.click();
         return this;
@@ -42,37 +42,37 @@ public class WildberriesPage {
         return this;
     }
 
-    @Step("переходим на страницу Регистрации")
+    @Step("переход на страницу Регистрации")
     public WildberriesPage login() {
         loginPage.click();
         return this;
     }
 
-    @Step("открываем меню с кодами стран")
+    @Step("открытие меню с кодами стран")
     public WildberriesPage openMenuMobileCode() {
         formMobileCodes.click();
         return this;
     }
 
-    @Step("выбираем код")
+    @Step("выбор кода")
     public WildberriesPage choosingMobileCode(String value) {
         menuMobileCode.find(byText(value)).click();
         return this;
     }
 
-    @Step("проверям что в поле правильно отобразился нужный код страны")
+    @Step("проверка правильности отображения нужного кода страны")
     public WildberriesPage checkMobileCode(String value) {
         mobileCode.shouldHave(text(value));
         return this;
     }
 
-    @Step("проверяем кнопку Работа в Wildberries")
+    @Step("проверка кнопки 'Работа в Wildberries'")
     public WildberriesPage checkEmploymentButton() {
         jobButton.shouldBe(visible).click();
         return this;
     }
 
-    @Step("Переходим на страницу 'Работа в Wildberries'")
+    @Step("Переход на страницу 'Работа в Wildberries'")
     public WildberriesPage jobPage() {
         jobPageButton.click();
         return this;
@@ -84,7 +84,7 @@ public class WildberriesPage {
         return this;
     }
 
-    @Step("Нажимаем на кнопку Войти")
+    @Step("клик на кнопку 'Войти'")
     public WildberriesPage loginButton() {
         loginPage.click();
         return this;

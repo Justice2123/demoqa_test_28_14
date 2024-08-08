@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,7 @@ public class WildberriesTests extends TestBase {
 
     WildberriesPage wildberriesPage = new WildberriesPage();
 
-
+    @DisplayName("check title empty basket")
     @Test
     @Tag("smoke")
     void checkEmptyBasketTest() {
@@ -18,7 +19,7 @@ public class WildberriesTests extends TestBase {
         wildberriesPage.checkBasketTitle("В корзине пока пусто");
     }
 
-
+    @DisplayName("check mobile's code")
     @Test
     @Tag("smoke")
     void checkCodeMobileTest() {
@@ -30,7 +31,7 @@ public class WildberriesTests extends TestBase {
         wildberriesPage.checkMobileCode("+996 ");
     }
 
-
+    @DisplayName("check employment button should be visible")
     @Test
     @Tag("regression")
     void employmentButtonTest() {
@@ -38,6 +39,7 @@ public class WildberriesTests extends TestBase {
         wildberriesPage.checkEmploymentButton();
     }
 
+    @DisplayName("check correct url on job page")
     @Test
     @Tag("smoke")
     void checkUrlWorkPageTest() {
@@ -46,6 +48,7 @@ public class WildberriesTests extends TestBase {
         wildberriesPage.checkUrl("https://www.wildberries.ru/services/trudoustroystvo");
     }
 
+    @DisplayName("check title login page")
     @Test
     @Tag("smoke")
     void loginPageTest() {
